@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    /* overflow-x: hidden; */
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.og {
+    padding: 5px 0;
+    /* background-color: black; */
+    top: -4px;
+    position: relative;
+    font-weight: bold;
+    border-radius: 1px;
+}
+
+.og a {
+    text-decoration: none;
+    color: rgb(7, 196, 243);
+}
+
+div.contain {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+nav.main_nav {
+    height: 60px;
+
+    /* background-color: black; */
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.main_nav ul.left_ul {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    /* width: 700px; */
+}
+
+nav.main_nav ul.left_ul li:hover {
+    border-bottom: 2px solid black;
+}
+
+nav.main_nav ul.right_ul {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    /* width: 700px; */
+}
+
+nav.main_nav li {
+    list-style: none;
+}
+
+.logo {
+    width: 110px;
+}
+
+nav.main_nav li {
+    margin: 0 20px;
+}
+
+section.showcase {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.384)), url(../img/dp1.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    line-height: 30px;
+    color: white;
+    text-transform: capitalize;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.showcase h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+
+}
+
+section.showcase button {
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+div.gird {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    /* justify-content: space-between; */
+    font-size: 1rem;
+}
+
+.img1 img {
+    /* width: 250px;
+    height: 200px; */
+    width: 100%;
+}
+
+.img1 {
+    margin: 0 10px;
+}
+
+.img1 a {
+    text-decoration: none;
+    color: #0067b8;
+    font-weight: bold;
+}
+
+div.xbox {
+    font-size: 1rem;
+    background-image: url(../img/pc1.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+div.xbox div.xbox_data {
+    /* line-height: 20px; */
+
+    width: 40%;
+    padding: 50px 15px 15px 20px;
+}
+
+div.xbox div.xbox_data p,
+div.xbox2 div.xbox_data2 p {
+    margin: 10px 0;
+}
+
+div.xbox div.xbox_data button {
+    /* margin-top: 10px; */
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+.xbox2 {
+    font-size: 1rem;
+    background-image: url(../img/mb6.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+div.xbox2 div.xbox_data2 {
+    /* line-height: 20px; */
+    color: rgb(3, 3, 3);
+    width: 40%;
+    padding: 50px 15px 15px 20px;
+}
+
+div.xbox2 div.xbox_data2 button {
+    /* margin-top: 10px; */
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.follow {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.follow * {
+    margin-right: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 30px;
+    background-color: #f2f2f2;
+}
+
+footer li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+@media screen and (max-width:808px) {
+    nav {
+        display: none;
+    }
+
+    div.gird {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        /* display: flex;
+        justify-content: space-between; */
+        text-align: center;
+    }
+
+    footer section {
+        margin-bottom: 20px;
+
+    }
+
+}
+
+
+@media screen and (max-width:535px) {
+    div.gird {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        /* ndisplay: flex;
+        justify-content: space-between; */
+        text-align: center;
+
+    }
+
+    footer section {
+        margin-bottom: 20px;
+
+    }
+
+    .xbox_data2 p,
+    .xbox_data p {
+
+        display: none;
+    }
+
+
+    .xbox_data2 button,
+    .xbox_data button {
+
+        margin-top: 20px;
+
+    }
+
+    section.img1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+}
