@@ -73,7 +73,7 @@ nav.main_nav li {
 }
 
 section.showcase {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.384)), url(../img/dp1.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.384)), url(./img/dp1.jpg);
     width: 100%;
     height: 500px;
     background-size: 100% 100%;
@@ -128,7 +128,7 @@ div.gird {
 
 div.xbox {
     font-size: 1rem;
-    background-image: url(../img/pc1.jpg);
+    background-image: url(./img/pc1.jpg);
     width: 100%;
     height: 350px;
     background-size: 100% 100%;
@@ -157,7 +157,7 @@ div.xbox div.xbox_data button {
 
 .xbox2 {
     font-size: 1rem;
-    background-image: url(../img/mb6.jpg);
+    background-image: url(./img/mb6.jpg);
     width: 100%;
     height: 350px;
     background-size: 100% 100%;
